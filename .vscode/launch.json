@@ -1,0 +1,103 @@
+{  
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Chrome : Launch with sourcemaps",
+            "type": "chrome",
+            "request": "launch",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}/src",
+            "sourceMaps": true,
+            "pathMapping": {
+                "/": "${workspaceFolder}"
+            },
+            "sourceMapPathOverrides": {
+                "../maps/*": "${webRoot}/scripts/postventaAqCliente/*"
+            },
+            "trace": true,
+            "skipFiles": [
+                "node_modules",
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch via NPM Debug",
+            "runtimeExecutable": "npm",
+            "runtimeVersion": "8.10.0",
+            "runtimeArgs": [
+                "run-script",
+                "debug-server"
+            ],
+            "port": 5858,
+            "console": "integratedTerminal"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch via NPM",
+            "runtimeExecutable": "npm",
+            "runtimeVersion": "8.10.0",
+            "runtimeArgs": [
+                "run-script",
+                "server",
+                "--",
+                "--nolazy",
+                "--inspect-brk=9229"
+            ],
+            "port": 9229,
+            "console": "integratedTerminal"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Node debug",
+            "runtimeVersion": "8.10.0",
+            "console": "integratedTerminal",
+            "program": "${file}"
+        },
+        {
+            "name": "Babel debug",
+            "type": "node",
+            "request": "launch",
+            "program": "${file}",
+            "stopOnEntry": false,
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "build",
+            // "runtimeExecutable": null,
+            // "runtimeExecutable": "node",
+            "runtimeVersion": "8.10.0",
+            "runtimeArgs": [
+                "--nolazy"
+            ],
+            "envFile": "${workspaceFolder}/.env",
+            "env": {
+                "NODE_ENV": "development"
+            },
+            "console": "integratedTerminal",
+            "sourceMaps": true,
+            // "outDir": "${workspaceFolder}/dist"
+            "outFiles": [
+                "${workspaceFolder}/dist/root/**/*.js"
+            ]
+        },
+        {
+            "name": "Launch",
+            "type": "node",
+            "request": "launch",
+            "program": "${file}",
+            "stopOnEntry": false,
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "runtimeVersion": "8.10.0",
+            "runtimeArgs": [
+              "--nolazy"
+            ],
+            "sourceMaps": true,
+            "outFiles": [
+              "${workspaceFolder}/../dist/**/*.js"
+            ]
+        }
+    ]
+}

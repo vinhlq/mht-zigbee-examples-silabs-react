@@ -1,0 +1,4 @@
+{
+  "terminal.integrated.shell.linux": "bash",
+  "terminal.integrated.shellArgs.linux": ["-i"],
+}
