@@ -1,1 +1,2 @@
-module.exports = require('../../../../api/src/actions/ServerActionsSocketIO');
+module.exports = require('mht-zigbee-client').ServerActionsSocketIO;
+// module.exports = require('./ServerActionsSocketIO');

@@ -4,18 +4,19 @@
   "description": "",
   "main": "./dist/index.html",
   "dependencies": {
+    "circular-buffer": "~1.0.2",
     "color": "~0.9.0",
     "flux": "~2.1.1",
     "fluxxor": "~1.6",
+    "mht-zigbee-client": "latest",
     "random-js": "~1.0.6",
     "react": "~0.14.0",
     "react-addons-css-transition-group": "~0.14.0",
-    "react-dom": "~0.14.0",
     "react-color-picker": "~2.1.9",
     "react-cookie": "~0.4.3",
+    "react-dom": "~0.14.0",
     "react-tap-event-plugin": "^0.2.1",
-    "semantic-ui-transition": "~1.12.2",
-    "circular-buffer": "~1.0.2"
+    "semantic-ui-transition": "~1.12.2"
   },
   "devDependencies": {
     "browserify": "~12.0.1",

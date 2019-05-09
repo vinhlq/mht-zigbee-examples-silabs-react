@@ -1,5 +1,5 @@
 var Config = {}
 
-Config.gatewayAddress = window.location.hostname + ':9010';
+Config.gatewayAddress = window.location.hostname + ':9020';
 
 module.exports = Config;
