@@ -32,9 +32,9 @@ class ControlPanel extends React.Component {
       showRulesAdd: true,
       extendedForm: false,
       reformbutton: true,
-      addingGroup: false,
+      addingGroup: true,
       addGroupButton: true,
-      groupsEnabled: false,
+      groupsEnabled: true,
       relayRules: [],
       cloudRules: [],
       validNetInfo: true,
@@ -753,6 +753,17 @@ class ControlPanel extends React.Component {
       </div>
     );
 
+    var groups = (
+        <div className="column">
+          <h4>Device Groups</h4>
+          {addGroupButton}
+          <br/>
+          <ReactCSSTransitionGroup transitionName="rulescreation" transitionEnterTimeout={300} transitionLeaveTimeout={300}>
+            {groupCreation}
+          </ReactCSSTransitionGroup>
+        </div>
+    );
+
     var reformButton;
     var reformButtonText = 'Reform ZigBee3.0 Network';
     if (this.state.reformbutton) {
@@ -790,6 +801,7 @@ class ControlPanel extends React.Component {
         <div className="ui stackable two column grid">
           {devices}
           {rules}
+          {groups}
         </div>
 
         <h4 className='ui header'>Network Maintenance</h4>
