@@ -1,5 +1,5 @@
 var Config = {}
 
-Config.gatewayAddress = window.location.hostname + ':9020';
+Config.gatewayAddress = 'http://192.168.1.111:9020';
 
 module.exports = Config;
