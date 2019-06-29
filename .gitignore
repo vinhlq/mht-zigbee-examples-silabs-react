@@ -6,6 +6,7 @@
 *.crt
 *.cert
 *.pem
+.env
 
 # Xcode
 #
@@ -70,3 +71,6 @@ dist/
 node_modules/
 aws-exports.js
 awsconfiguration.json
+
+!/.gitignore
+!/.env_example

@@ -1,0 +1,19 @@
+# /lib/systemd/system/mht-gateway-management-ui@.service
+[Unit]
+Description = mht-gateway-management-ui
+After = network.target network-online.target
+
+[Service]
+User = deb
+#User = vity
+#Group = pi
+Type = simple
+#PAMName=login
+#WorkingDirectory=/home/pi/gw-data
+Environment="NODE=/home/deb/.nvm/versions/node/v8.10.0/bin/node"
+#Environment="NODE=/home/vity/.nvm/versions/node/v8.10.0/bin/node"
+ExecStart = /mnt/codebase/silabs/mht-zigbee-project-structure/mht-zigbee-examples-silabs-react/run.sh %I 2>&1
+Restart = always
+
+[Install]
+WantedBy = multi-user.target
