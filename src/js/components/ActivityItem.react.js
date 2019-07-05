@@ -255,7 +255,8 @@ class ActivityItem extends React.Component {
             </div>
         );
       } else if (parseInt(item.data.deviceType) === Constants.DEVICE_ID_EXTENDED_COLOR_LIGHT
-      || parseInt(item.data.deviceType) === Constants.DEVICE_ID_COLOR_DIMMABLE_LIGHT) {
+      || parseInt(item.data.deviceType) === Constants.DEVICE_ID_COLOR_DIMMABLE_LIGHT
+      || parseInt(item.data.deviceType) === Constants.DEVICE_ID_ZLL_COLOR_LIGHT) {
         extendedLightPanel = (
               <div className="center aligned column">
               <div className="center aligned ui divider"></div>

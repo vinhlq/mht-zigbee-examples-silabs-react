@@ -7,6 +7,8 @@ lights[Constants.DEVICE_ID_HA_ON_OFF_LIGHT] = 'Ha On/Off Light Switch';
 lights[Constants.DEVICE_ID_COLOR_DIMMABLE_LIGHT] = 'Dimmable Color Light';
 lights[Constants.DEVICE_ID_EXTENDED_COLOR_LIGHT] = 'Extended Color Light';
 lights[Constants.DEVICE_ID_COLOR_TEMPERATURE_LIGHT] = 'Color Temperature Light';
+lights[Constants.DEVICE_ID_ZLL_COLOR_LIGHT] = 'Color Light';
+lights[Constants.DEVICE_ID_ZLL_COLOR_SCENE_CONTROLLER] = 'Color scene controller';
 
 var switches = {};
 switches[Constants.DEVICE_ID_ON_OFF_SWITCH] = 'Switch';
