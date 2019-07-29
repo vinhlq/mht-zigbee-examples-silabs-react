@@ -18,14 +18,17 @@ class Slider extends React.Component {
       
       // Created a throttle limited position updater for slider
       this.tChangeLevel = _.throttle(function(level) {
+        console.log("0", level);
         this.changeLevel(level);
       }, this.state.delay);
     }
 
     changeLevel(level) {
       if (this.props.sliderType === 'Brightness') {
+        console.log("1", level);
         this.props.setLevel(level, this.props.item);
       } else {
+        console.log("2", level);
         this.props.setTemp(level, this.props.item);
       }
     }
@@ -47,6 +50,7 @@ class Slider extends React.Component {
           this.setState({colorTemp: e.target.value})
         }
       }
+      console.log('org', e.target.value);
       this.tChangeLevel(e.target.value);
     }
 
