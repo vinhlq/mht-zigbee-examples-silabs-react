@@ -22,6 +22,9 @@ var sensors = {};
 sensors[Constants.DEVICE_TYPE_SENSOR] = 'Multi Sensor';
 sensors[Constants.DEVICE_TYPE_CONTACT_SENSOR] = 'Contact Sensor';
 sensors[Constants.DEVICE_TYPE_OCCUPANCY_SENSOR] = 'Occupancy Sensor';
+sensors[Constants.DEVICE_ID_LIGHT_SENSOR] = 'Light Sensor';
+sensors[Constants.DEVICE_ID_DOOR_LOCK] = 'Door Lock';
+sensors[Constants.DEVICE_TYPE_THERMOSTAT] = 'Thermostat';
 
 var smartplugs = {};
 smartplugs[Constants.DEVICE_TYPE_SMART_PLUG] = 'Smart Plug';
