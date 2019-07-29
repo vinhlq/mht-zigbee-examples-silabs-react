@@ -5,20 +5,26 @@ lights[Constants.DEVICE_ID_ON_OFF_LIGHT] = 'Light';
 lights[Constants.DEVICE_ID_DIMMABLE_LIGHT] = 'Dimmable Light';
 lights[Constants.DEVICE_ID_HA_ON_OFF_LIGHT] = 'Ha On/Off Light Switch';
 lights[Constants.DEVICE_ID_COLOR_DIMMABLE_LIGHT] = 'Dimmable Color Light';
-lights[Constants.DEVICE_ID_EXTENDED_COLOR_LIGHT] = 'Extended Color Light';
+lights[Constants.DEVICE_ID_EXTENDED_COLOR_LIGHT] = 'ZLL Extended Color Light';
+lights[Constants.DEVICE_ID_LO_EXTENDED_COLOR_LIGHT] = 'LO Extended Color Light';
 lights[Constants.DEVICE_ID_COLOR_TEMPERATURE_LIGHT] = 'Color Temperature Light';
-lights[Constants.DEVICE_ID_ZLL_COLOR_LIGHT] = 'Color Light';
-lights[Constants.DEVICE_ID_ZLL_COLOR_SCENE_CONTROLLER] = 'Color scene controller';
+lights[Constants.DEVICE_ID_ZLL_COLOR_LIGHT] = 'ZLL Color Light';
+lights[Constants.DEVICE_ID_ZLL_COLOR_SCENE_CONTROLLER] = 'ZLL Color scene controller';
 
 var switches = {};
 switches[Constants.DEVICE_ID_ON_OFF_SWITCH] = 'Switch';
 switches[Constants.DEVICE_ID_LEVEL_CONTROL_SWITCH] = 'Dimmer';
 switches[Constants.DEVICE_ID_COLOR_DIMMER_SWITCH] = 'Dimmer';
+switches[Constants.DEVICE_ID_LO_DIMMER_SWITCH] = 'LO Dimmer';
+switches[Constants.DEVICE_ID_LO_SCENE_CONTROLLER] = 'LO Color scene controller';
 
 var sensors = {};
 sensors[Constants.DEVICE_TYPE_SENSOR] = 'Multi Sensor';
 sensors[Constants.DEVICE_TYPE_CONTACT_SENSOR] = 'Contact Sensor';
 sensors[Constants.DEVICE_TYPE_OCCUPANCY_SENSOR] = 'Occupancy Sensor';
+sensors[Constants.DEVICE_ID_LIGHT_SENSOR] = 'Light Sensor';
+sensors[Constants.DEVICE_ID_DOOR_LOCK] = 'Door Lock';
+sensors[Constants.DEVICE_TYPE_THERMOSTAT] = 'Thermostat';
 
 var smartplugs = {};
 smartplugs[Constants.DEVICE_TYPE_SMART_PLUG] = 'Smart Plug';
