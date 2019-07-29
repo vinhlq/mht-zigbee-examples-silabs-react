@@ -237,15 +237,15 @@ const ServerActionsSocketIO = {
     }
   },
 
-  // setDeviceOn: function(node) {
-  //   if (node.data.deviceType === 'group') {
-  //     var deviceTableIndex = node.data.itemList;
-  //     _socket.emit('action', {type:"lighton", deviceTableIndex: deviceTableIndex});
-  //   } else {
-  //     var deviceEndpoint = node.data.deviceEndpoint;
-  //     _socket.emit('action', {type:"lighton", deviceEndpoint: deviceEndpoint});
-  //   }
-  // },
+  setDeviceOn: function(node) {
+    if (node.data.deviceType === 'group') {
+      var deviceTableIndex = node.data.itemList;
+      _socket.emit('action', {type:"lighton", deviceTableIndex: deviceTableIndex});
+    } else {
+      var deviceEndpoint = node.data.deviceEndpoint;
+      _socket.emit('action', {type:"lighton", deviceEndpoint: deviceEndpoint});
+    }
+  },
 
   setDeviceOnWithTimedOff: function(node, onOffControl, onTime, offWaitTime) {
     if (node.data.deviceType === 'group') {
@@ -257,15 +257,15 @@ const ServerActionsSocketIO = {
     }
   },
 
-  setDeviceOn: function(node) {
-    if (node.data.deviceType === 'group') {
-      var deviceTableIndex = node.data.itemList;
-      _socket.emit('action', {type:"lightontimedoff", deviceTableIndex: deviceTableIndex, onOffControl: 0, onTime: 50, offWaitTime: 0});
-    } else {
-      var deviceEndpoint = node.data.deviceEndpoint;
-      _socket.emit('action', {type:"lightontimedoff", deviceEndpoint: deviceEndpoint, onOffControl: 0, onTime: 50, offWaitTime: 2});
-    }
-  },
+//   setDeviceOn: function(node) {
+//     if (node.data.deviceType === 'group') {
+//       var deviceTableIndex = node.data.itemList;
+//       _socket.emit('action', {type:"lightontimedoff", deviceTableIndex: deviceTableIndex, onOffControl: 0, onTime: 50, offWaitTime: 0});
+//     } else {
+//       var deviceEndpoint = node.data.deviceEndpoint;
+//       _socket.emit('action', {type:"lightontimedoff", deviceEndpoint: deviceEndpoint, onOffControl: 0, onTime: 50, offWaitTime: 2});
+//     }
+//   },
 
   enterIdentify: function(node) {
     var deviceEndpoint = node.data.deviceEndpoint;
