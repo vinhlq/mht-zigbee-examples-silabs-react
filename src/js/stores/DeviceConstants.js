@@ -12,8 +12,8 @@ lights[Constants.DEVICE_ID_ZLL_COLOR_LIGHT] = 'ZLL Color Light';
 lights[Constants.DEVICE_ID_ZLL_COLOR_SCENE_CONTROLLER] = 'ZLL Color scene controller';
 
 var switches = {};
-switches[Constants.DEVICE_ID_ON_OFF_SWITCH] = 'Switch';
-switches[Constants.DEVICE_ID_LEVEL_CONTROL_SWITCH] = 'Dimmer';
+switches[Constants.DEVICE_ID_HA_ON_OFF_SWITCH] = 'Switch';
+switches[Constants.DEVICE_ID_HA_LEVEL_CONTROL_SWITCH] = 'Dimmer';
 switches[Constants.DEVICE_ID_COLOR_DIMMER_SWITCH] = 'Dimmer';
 switches[Constants.DEVICE_ID_LO_DIMMER_SWITCH] = 'LO Dimmer';
 switches[Constants.DEVICE_ID_LO_SCENE_CONTROLLER] = 'LO Color scene controller';
@@ -28,6 +28,7 @@ sensors[Constants.DEVICE_TYPE_THERMOSTAT] = 'Thermostat';
 
 var smartplugs = {};
 smartplugs[Constants.DEVICE_TYPE_SMART_PLUG] = 'Smart Plug';
+smartplugs[Constants.DEVICE_ID_HA_MAINS_POWER_OUTLET] = 'HA Mains power outlet';
 
 var deviceTuple = [];
 deviceTuple.push(lights);
