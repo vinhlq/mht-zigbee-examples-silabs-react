@@ -6,10 +6,13 @@ lights[Constants.DEVICE_ID_DIMMABLE_LIGHT] = 'Dimmable Light';
 lights[Constants.DEVICE_ID_HA_ON_OFF_LIGHT] = 'Ha On/Off Light Switch';
 lights[Constants.DEVICE_ID_COLOR_DIMMABLE_LIGHT] = 'Dimmable Color Light';
 lights[Constants.DEVICE_ID_EXTENDED_COLOR_LIGHT] = 'ZLL Extended Color Light';
+lights[Constants.DEVICE_ID_LO_COLOR_TEMPERATURE_LIGHT] = 'ZLL Color Temperature Light';
 lights[Constants.DEVICE_ID_LO_EXTENDED_COLOR_LIGHT] = 'LO Extended Color Light';
 lights[Constants.DEVICE_ID_COLOR_TEMPERATURE_LIGHT] = 'Color Temperature Light';
 lights[Constants.DEVICE_ID_ZLL_COLOR_LIGHT] = 'ZLL Color Light';
 lights[Constants.DEVICE_ID_ZLL_COLOR_SCENE_CONTROLLER] = 'ZLL Color scene controller';
+lights[Constants.DEVICE_ID_ZLL_NON_COLOR_SCENE_CONTROLLER] = 'ZLL Non-color Scene Controller';
+lights[Constants.DEVICE_ID_HA_WINDOW_COVERING] = 'Ha Window covering';
 
 var switches = {};
 switches[Constants.DEVICE_ID_HA_ON_OFF_SWITCH] = 'Switch';
@@ -24,6 +27,7 @@ sensors[Constants.DEVICE_TYPE_CONTACT_SENSOR] = 'Contact Sensor';
 sensors[Constants.DEVICE_TYPE_OCCUPANCY_SENSOR] = 'Occupancy Sensor';
 sensors[Constants.DEVICE_ID_LIGHT_SENSOR] = 'Light Sensor';
 sensors[Constants.DEVICE_ID_DOOR_LOCK] = 'Door Lock';
+sensors[Constants.DEVICE_ID_HA_SIMPLE_SENSOR] = 'HA Simple Sensor';
 sensors[Constants.DEVICE_TYPE_THERMOSTAT] = 'Thermostat';
 
 var smartplugs = {};
